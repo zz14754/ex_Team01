@@ -1,30 +1,48 @@
-# Data Analysis Course
 
-## 下载本仓库-课件
+## News
 
-- 点击绿色 **<font color=green><>Code</font>** 按钮，选择 **Download ZIP** 下载本仓库。
-- 解压缩后，使用 VS Code 打开文件夹即可。
-- 上课演示的 `.ipynb` 文件在 **./body** 文件夹中，文件名与 [DSbook](https://book.lianxh.cn/ds/index.html) 的网址中的文件名对应。
-  - <https://lianxhcn.github.io/ds/body/01_02_jupyter_notebook.html>
-  - 对应 `./body/01_02_jupyter_notebook.ipynb` 文件
+- **第二次个人作业**已经发布：以下两个作业任选其一 (当然，如果都做更好)
+  - [ex_P02.md](https://github.com/lianxhcn/ds/blob/main/homework/ex_P02.md)
+  - [ex_P03_EDA_resume.md](https://github.com/lianxhcn/ds/blob/main/homework/ex_P03_EDA_resume.md)
+  - 提交**截止时间**：2026 年 3 月 18 日 23:59
 
-## 使用 github desktop 下载
+- 第一次小组作业已经发布：[ex_Team01.md](https://github.com/lianxhcn/ds/blob/main/homework/ex_Team01.md)
+  - 提交**截止时间**：2025 年 3 月 20 日 23:59
 
-如果你熟悉 git，可以在 VScode 终端使用 git 命令 Fork 或 clone 本仓库。对于多数人来说，推荐使用 [GitHub Desktop](https://desktop.github.com/)，详情参见：
+>&#x1F353; **[点此提交作业](https://send2me.cn/JQP4AtjE/TVa8qKMHpUP3Kg)**
 
-  - 杨雪, 2025, [GitHub Desktop 使用方法介绍：可视化 Git 管理的效率工具](https://www.lianxh.cn/details/1672.html).
+## 作业提交说明
 
-实操过程中遇到问题，可以问一下 DeepSeek 或豆包。
+- **作业名称**：填入 `ex_P01`, `ex_P02`，或 `ex_Team01` 等
+- **姓名**：
+  - 个人作业：填入你的真实姓名
+  - 小组作业：填入 `小组编号-组长姓名`，如 `G1-张派森`
+- **版本号**：首次提交填写 `v1`，若提交修改版，则填写 `v2`、`v3` 等
 
-## 发布自己的在线讲义
 
-你可以修改本仓库的内容，发布自己的在线讲义。具体步骤如下：
+### 2. 提交资料要求
 
-- 在 GitHub 上 Fork 本仓库。
-- 在本地使用 GitHub Desktop 或 git 命令将 Fork 后的仓库 clone 到本地。
-- 修改内容后，在 VScode 终端执行 `quarto render` 命令生成新的网页内容。在此之前，你需要安装 [Quarto](https://quarto.org/docs/get-started/)，以及 VScode 的 [Quarto 扩展](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)。
-- 使用 GitHub Desktop 或 git 命令将修改后的内容 push 到 GitHub 上。
-- 在 GitHub 上打开你的仓库，点击 **Settings**，选择 **Pages**，在 **Source** 处选择 **main branch**，然后点击 **Save**。
-- 稍等几分钟后，你的在线讲义就会发布成功，网址为 `https://你的用户名.github.io/ds/`。
+- **提交的资料类型**：
+  - **单一文档**。如果提交的文档中的不涉及本地数据文件，则只需提交完成作业过程中撰写的程序文件 (可以用 Stata/R/Python 进行分析)，
+  - **压缩文件**。如果提交的文档中涉及本地数据文件，或包含一个以上的程序文档或分析文档，则需要将所有相关文件打包成一个压缩文件 (zip 格式)，并在压缩包中包含一个 `README.md` 文件，描述数据集的来源和代码的运行方法等。
 
-详情参见：连玉君，2025，[Quarto Book](https://lianxhcn.github.io/quarto_book/)。
+- **文档结构**：参照讲义 [新建项目文件结构](https://lianxhcn.github.io/research_with_AI/body/01_use_Jupyter_Notebook.html#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%96%87%E6%A1%A3) 中的相关说明，设定项目文件夹和文件。提交的文件夹结构如下：
+
+    ```bash
+    # 项目文档结构
+    D:/Project/Project_Name (项目根目录，可酌情调整)
+    ├── codes
+    ├── data_raw
+    ├── data_clean
+    ├── output
+    ├── README.md
+    ├── 01_data_clean.ipynb
+    ├── 02_EDA_analysis.ipynb
+    └── 03_xxx_xxx.ipynb
+    ```
+
+
+- **重要提示：** 
+  - 完成作业过程中可以使用 AI 工具，但要在文档中附上你的提示词或提示词链接 (ChatGPT、豆包等 AI 工具都支持分享链接，DeepSeek 可参考 [这个](https://www.lianxh.cn/details/1566.html) 生成分享链接)；
+  - 小组作业：请在文档首页注明小组成员姓名。
+  - 所有雷同的作业均将计为 0 分，请勿抄袭！
