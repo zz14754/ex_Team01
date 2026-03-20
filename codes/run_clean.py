@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """执行 01_data_clean.ipynb 中的数据清洗逻辑"""
 import pandas as pd
-import numpy as np
 import os
 import warnings
 warnings.filterwarnings('ignore')
 
-DATA_RAW = r"D:\Project\City_Budget_Analysis\data_raw"
-DATA_CLEAN = r"D:\Project\City_Budget_Analysis\data_clean"
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DATA_RAW = os.path.join(project_root, "data_raw")
+DATA_CLEAN = os.path.join(project_root, "data_clean")
 
 # 1.1 读取原始数据
 df = pd.read_csv(os.path.join(DATA_RAW, "merged_raw.csv"))

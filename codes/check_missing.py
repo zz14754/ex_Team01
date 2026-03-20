@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """检查所有城市所有年份的缺失值情况"""
 import pandas as pd
-import numpy as np
+import os
 
-DATA_RAW = r"D:\Project\City_Budget_Analysis\data_raw"
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DATA_RAW = os.path.join(project_root, "data_raw")
 
 df = pd.read_csv(f"{DATA_RAW}/merged_raw.csv")
 df['year'] = df['year'].astype(int)

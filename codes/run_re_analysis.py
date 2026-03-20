@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """执行 03_real_estate_analysis 的分析和可视化"""
+import os
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -10,8 +11,9 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 import warnings
 warnings.filterwarnings('ignore')
 
-DATA_CLEAN = r"D:\Project\City_Budget_Analysis\data_clean"
-OUTPUT = r"D:\Project\City_Budget_Analysis\output"
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DATA_CLEAN = os.path.join(project_root, "data_clean")
+OUTPUT = os.path.join(project_root, "output")
 
 df = pd.read_csv(f"{DATA_CLEAN}/city_all_clean.csv")
 print(f"数据: {df.shape}")
